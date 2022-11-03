@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Pics</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <nav>
+            <img class="logo" src="/midia/DanielOli.jpg" ></img>
+            <ul>
+                <a href="/index.html"><li class="menu">Galerias</li></a>
+                <ul>
+                    <a href="artevive.html"><li>A Arte Vive</li></a>
+                    <a href="natureza.html"><li class="destaque">Andando pela Natureza</li></a>
+                    <a href="devaneios.html"><li>Devaneios do Artista</li></a>
+                    <a href="selvapedra.html"><li>Selvas de Pedra</li></a>
+                    <a href="trabalhadores.html"><li>Trabalhadores da Praia</li></a>
+                </ul>
+            </ul>
+            <a href="https://www.instagram.com/danieloli_fotografias/" target="_blank"><button><b>@danieloli_fotografias</b></button></a>
+        </nav>
+
+        <section>
+        </section>
+
+        <script type="module">
+
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+                apiKey: "AIzaSyAny_6AT2YAYjPttmne0jygcqOWtu23lvA",
+                authDomain: "danielolifotografias.firebaseapp.com",
+                databaseURL: "https://danielolifotografias-default-rtdb.firebaseio.com",
+                projectId: "danielolifotografias",
+                storageBucket: "danielolifotografias.appspot.com",
+                messagingSenderId: "1084089897568",
+                appId: "1:1084089897568:web:35fcfd9ddedf03620ae905"
+            };
+
+            const app = initializeApp(firebaseConfig);
+
+            import { getDatabase, ref, child, get } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js";;
+
+            const dbRef = ref(getDatabase());
+            get(child(dbRef, `TheProductRealdb/natureza/LinksOfImagesArray/`)).then((snapshot) => {
+                if (snapshot.exists()) {
+                    let imageURL = snapshot.val();
+
+                    for (let i = 0; i < imageURL.length; i++) {
+                        let img = document.createElement("img");
+                        img.src = imageURL[i];
+                        let section = document.querySelector('section');
+                        section.appendChild(img);
+                    }
+
+                } else {
+                    console.log("No data available");
+                }
+            }).catch((error) => {
+                console.error(error);
+            });
+
+        </script>
+    </div>
+
+    <footer>
+        <p>Daniel Oli Photography © Designed by DSilva</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+
+.imagesDivStyle {
+    width: 600px;
+    border: 1px grey solid;
+    padding: 5px;
+}
+
+.imgs {
+    height: 80px;
+    width: 100px;
+    border: 1px black solid;
+    margin: 5px;
+}
