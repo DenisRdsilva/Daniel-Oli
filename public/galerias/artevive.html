@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,50 @@
     <title>Daniel Pics</title>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
     <div>
         <nav>
-            <img class="logo" src="/midia/DanielOli.jpg" ></img>
+            <video src="/public/midia/DanielOli.mp4" muted>Your browser does not support the video tag.</video>
+            <script>
+                let video = document.querySelector('video');
+                video.defaultPlaybackRate = 0.75;
+                video.load();
+                video.addEventListener('loadedmetadata', function() {
+                    this.currentTime = 1;
+                }, false);
+
+            </script>
             <ul>
-                <a href="/index.html"><li class="menu">Galerias</li></a>
+                <a href="/public/index.html">
+                    <li class="menu">Galerias</li>
+                </a>
                 <ul>
-                    <a href="artevive.html"><li class="destaque">A Arte Vive</li></a>
-                    <a href="natureza.html"><li>Andando pela Natureza</li></a>
-                    <a href="devaneios.html"><li>Devaneios do Artista</li></a>
-                    <a href="selvapedra.html"><li>Selvas de Pedra</li></a>
-                    <a href="trabalhadores.html"><li>Trabalhadores da Praia</li></a>
+                    <a href="artevive.html">
+                        <li class="destaque">A Arte Vive</li>
+                    </a>
+                    <a href="natureza.html">
+                        <li>Andando pela Natureza</li>
+                    </a>
+                    <a href="devaneios.html">
+                        <li>Devaneios do Artista</li>
+                    </a>
+                    <a href="selvapedra.html">
+                        <li>Selvas de Pedra</li>
+                    </a>
+                    <a href="trabalhadores.html">
+                        <li>Trabalhadores da Praia</li>
+                    </a>
                 </ul>
             </ul>
-            <a href="https://www.instagram.com/danieloli_fotografias/" target="_blank"><button><b>@danieloli_fotografias</b></button></a>
+            <div class="btns">
+                <a href="https://www.instagram.com/danieloli_fotografias/" target="_blank"><button>
+                        <img src="https://cdn-icons-png.flaticon.com/128/3661/3661391.png" alt="">
+                        <b>Instagram</b>
+                    </button></a>
+                <a href="/public/upload/login.html" target="_blank"><button>
+                        <b>Acesso</b></button></a>
+            </div>
         </nav>
 
         <section>
@@ -76,4 +106,5 @@
         <p>Daniel Oli Photography © Designed by DSilva</p>
     </footer>
 </body>
+
 </html>

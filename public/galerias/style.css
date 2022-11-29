@@ -24,6 +24,7 @@ nav {
 
 .menu {
     background-color: black;
+    width: auto;
 }
 
 .menu:hover {
@@ -31,12 +32,7 @@ nav {
 }
 
 video {
-    margin-top: 35px;
-    width: 100%;
-}
-
-.logo {
-    margin-top: 35px;
+    margin-top: 50px;
     width: 100%;
 }
 
@@ -69,6 +65,7 @@ nav ul a li {
     text-decoration: none;
     color: white;
     padding-left: 40px;
+    padding-right: 0px;
 }
 
 nav ul a .menu {
@@ -82,32 +79,49 @@ nav ul a li:hover {
     padding-left: 60px;
 }
 
+nav ul a li:hover:first-child {
+    background-color: black;
+    padding-left: 20px;
+}
+
 nav ul a li:active {
     text-decoration: none;
 }
 
+nav .btns {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+} 
+
+.btns img {
+    height: 14px;
+    vertical-align: middle;
+}
+
 nav button {
+    width: 11.5vw;
     position: relative;
-    top: 20px;
-    width: 100%;
     text-align: center;
     font-size: 20;
     height: 30px;
+    top: 10px;
 }
 
 section {
     width: 77%;
-    background-color: rgb(30, 30, 30);
     margin-left: 23%;
 }
 
 section img {
-    height: 600px;
+    background-color: rgb(70, 70, 70);
+    height: 95vh;
     display: block;
-    border-right: 25px;
-    border-left: 25px;
+    padding-left: 25px;
+}
+
+section img:last-child {
     padding-right: 25px;
-    border-color: rgb(38, 38, 38);
 }
 
 section {
@@ -177,24 +191,113 @@ footer p {
 
 table {
     border-collapse: collapse;
+    border-bottom: solid 30px;
+    border-color: rgb(25, 25, 25);
 }
 
 table img {
     height: 18vh;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
+    .btns b:nth-child(2) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
     div {
-        display: flex;
-        flex-direction: column;
         margin: 0;
+        flex-direction: column;
     }
 
     nav {
-        position: fixed;
+        position: relative;
+        width: 100%;
+        height: 95vh;
         background-color: rgb(85, 85, 85);
+    }  
+    
+    nav .btns {
+        display: flex;
+        flex-direction: row;
+    } 
+    
+    nav button {
+        width: 48vw;
+        position: relative;
+        text-align: center;
+        font-size: 20;
+        height: 30px;
+        top: 10px;
+    }
+
+    .btns b:nth-child(2) {
+        display: inline-block;
+    }
+
+    .btns img {
+        padding-bottom: 1px;
+    } 
+
+    .fig {
+        display: none;
+    }
+
+    .cont {
+        padding: 0;
+    }
+
+    section {
+        top: 15px;
+        width: 100%;
+        margin: 0;
+        border: 0;
+        padding-bottom: 15px;
+        display: flex;
+        flex-flow: column;
+        background-color: rgb(85, 85, 85);
+    }
+
+    section img{
+        position: relative;
+        display: block;
+        border-bottom: solid rgb(70, 70, 70) 15px;
+        margin: 0;
+        padding: 0;
         height: max-content;
-        color: white;
-        z-index: 2;
+    }
+    
+    section img:last-child {
+        padding-right: 0px;
+    }   
+
+    video {
+        width: 80%;
+        margin-top: 25px;
+        margin-right: 10%;
+        margin-left: 10%;
+    }   
+
+    .fig {
+        display: none;
+    }
+
+    .cont {
+        padding: 0;
+    }
+
+    footer {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 5vh;
     }
 }

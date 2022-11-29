@@ -11,33 +11,46 @@
 </head>
 
 <body>
-    <div>
+    <div id="content">
         <nav>
-            <img class="logo" src="/midia/DanielOli.jpg"></img>
-            <ul>
-                <a href="/index.html">
+            <video src="/midia/DanielOli.mp4">Your browser does not support the video tag.</video>
+            <script>
+                let video = document.querySelector('video');
+                video.defaultPlaybackRate = 0.75;
+                video.load();
+                
+            </script>
+
+            <ul class="dropdown">
+                <a id="hidbtn" href="/public/index.html">
                     <li class="menu">Galerias</li>
                 </a>
                 <ul>
-                    <a href="artevive.html">
+                    <a id="esconder" class="esconder" href="artevive.html">
                         <li>A Arte Vive</li>
                     </a>
-                    <a href="natureza.html">
+                    <a id="esconder" href="natureza.html">
                         <li>Andando pela Natureza</li>
                     </a>
-                    <a href="devaneios.html">
+                    <a id="esconder" href="devaneios.html">
                         <li>Devaneios do Artista</li>
                     </a>
-                    <a href="selvapedra.html">
+                    <a id="esconder" href="selvapedra.html">
                         <li>Selvas de Pedra</li>
                     </a>
-                    <a href="trabalhadores.html">
+                    <a id="esconder" href="trabalhadores.html">
                         <li class="destaque">Trabalhadores da Praia</li>
                     </a>
                 </ul>
             </ul>
-            <a href="https://www.instagram.com/danieloli_fotografias/"
-                target="_blank"><button><b>@danieloli_fotografias</b></button></a>
+            <div class="btns">
+                <a href="https://www.instagram.com/danieloli_fotografias/" target="_blank"><button>
+                        <img src="https://cdn-icons-png.flaticon.com/128/3661/3661391.png" alt="">
+                        <b>Instagram</b>
+                    </button></a>
+                <a href="/public/upload/login.html" target="_blank"><button>
+                        <b>Acesso</b></button></a>
+            </div>
         </nav>
 
         <section>
@@ -72,7 +85,7 @@
                     let imageURL = snapshot.val();
 
                     for (let i = 0; i < imageURL.length; i++) {
-                        let img = document.createElement("img");
+                        let img = document.createElement('img');
                         img.src = imageURL[i];
                         let section = document.querySelector('section');
                         section.appendChild(img);
@@ -86,11 +99,11 @@
             });
 
         </script>
-    </div>
 
-    <footer>
-        <p>Daniel Oli Photography © Designed by DSilva</p>
-    </footer>
+        <footer>
+            <p>Daniel Oli Photography © Designed by DSilva</p>
+        </footer>
+    </div>
 </body>
 
 </html>

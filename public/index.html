@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,8 @@
     <title>Daniel Oli Fotografias</title>
 
     <link href="galerias/style.css" rel="stylesheet">
-
 </head>
+
 <body>
     <div>
         <nav>
@@ -17,21 +18,43 @@
                 let video = document.querySelector('video');
                 video.defaultPlaybackRate = 0.75;
                 video.load();
+
             </script>
             <ul>
-                <li class="menu">Galerias</li>
-                <ul>
-                    <a href="galerias/artevive.html"><li>A Arte Vive</li></a>
-                    <a href="galerias/natureza.html"><li>Andando pela Natureza</li></a>
-                    <a href="galerias/devaneios.html"><li>Devaneios do Artista</li></a>
-                    <a href="galerias/selvapedra.html"><li>Selvas de Pedra</li></a>
-                    <a href="galerias/trabalhadores.html"><li>Trabalhadores da Praia</li></a>
+                <a class="dropdown-hover" id="dropdownMenuButton1">
+                    <li class="menu destaque">Galerias</li>
+                </a>
+                <ul class="dropdown-menu">
+                    <a class="dropdown-item" href="galerias/artevive.html">
+                        <li>A Arte Vive</li>
+                    </a>
+                    <a class="dropdown-item" href="galerias/natureza.html">
+                        <li>Andando pela Natureza</li>
+                    </a>
+                    <a class="dropdown-item" href="galerias/devaneios.html">
+                        <li>Devaneios do Artista</li>
+                    </a>
+                    <a class="dropdown-item" href="galerias/selvapedra.html">
+                        <li>Selvas de Pedra</li>
+                    </a>
+                    <a class="dropdown-item" href="galerias/trabalhadores.html">
+                        <li>Trabalhadores da Praia</li>
+                    </a>
                 </ul>
             </ul>
-            <a href="https://www.instagram.com/danieloli_fotografias/" target="_blank"><button><b>@danieloli_fotografias</b></button></a>
+            <div class="btns">
+                <a href="https://www.instagram.com/danieloli_fotografias/" target="_blank">
+                    <button>
+                        <img src="https://cdn-icons-png.flaticon.com/128/3661/3661391.png" alt="">
+                        <b>Instagram</b>
+                    </button></a>
+                <a href="/public/upload/login.html" target="_blank"><button>
+                        <b>Acesso</b></button></a>
+            </div>
         </nav>
 
-        <section>
+        <section class="cont">
+
             <div class="fig">
 
                 <div class="legenda">
@@ -39,36 +62,38 @@
                     <table>
                         <tr>
                             <td>
-                                <img src="images/gal1/gal1_img (26).jpg" alt="">
+                                <img id="img0">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="images/gal1/gal1_img (27).jpg" alt="">
+                                <img id="img1">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="images/gal1/gal1_img (34).jpg" alt="">
+                                <img id="img2">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="images/gal1/gal1_img (38).jpg" alt="">
+                                <img id="img3">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="images/gal1/gal1_img (48).jpg" alt="">
+                                <img id="img4">
                             </td>
                         </tr>
                     </table>
 
-                    <a href="galerias/artevive.html"><p>A Arte Vive</p></a>
+                    <a href="galerias/artevive.html">
+                        <p>A Arte Vive</p>
+                    </a>
                 </div>
 
                 <div class="legenda">
@@ -76,73 +101,38 @@
                     <table>
                         <tr>
                             <td>
-                                <img src="images/gal2/gal2_img (64).jpg" alt="">
+                                <img id="img5">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="images/gal2/gal2_img (74).jpg" alt="">
+                                <img id="img6">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="images/gal2/gal2_img (79).jpg" alt="">
+                                <img id="img7">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="images/gal2/gal2_img (93).jpg" alt="">
+                                <img id="img8">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="images/gal2/gal2_img (102).jpg" alt="">
-                            </td>
-                        </tr>
-                    </table>
-                    
-                    <a href="galerias/natureza.html"><p>Andando pela Natureza</p></a>
-                </div>
-                
-                <div class="legenda">
-
-                    <table>
-                        <tr>
-                            <td>
-                                <img src="images/gal3/gal3_img (4).jpg" alt="">
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <img src="images/gal3/gal3_img (25).jpg" alt="">
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <img src="images/gal3/gal3_img (27).jpg" alt="">
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <img src="images/gal3/gal3_img (4).jpg" alt="">
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <img src="images/gal3/gal3_img (31).jpg" alt="">
+                                <img id="img9">
                             </td>
                         </tr>
                     </table>
 
-                    <a href="galerias/devaneios.html"><p>Devaneios do Artista</p></a>
+                    <a href="galerias/natureza.html">
+                        <p>Andando pela Natureza</p>
+                    </a>
                 </div>
 
                 <div class="legenda">
@@ -150,73 +140,116 @@
                     <table>
                         <tr>
                             <td>
-                                <img src="images/gal4/gal4_img (22).jpg" alt="">
+                                <img id="img10">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="images/gal4/gal4_img (60).jpg" alt="">
+                                <img id="img11">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="images/gal4/gal4_img (35).jpg" alt="">
+                                <img id="img12">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="images/gal4/gal4_img (28).jpg" alt="">
+                                <img id="img13">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="images/gal4/gal4_img (18).jpg" alt="">
+                                <img id="img14">
                             </td>
                         </tr>
                     </table>
 
-                    <a href="galerias/selvapedra.html"><p>Selvas de Pedra</p></a>
+                    <a href="galerias/devaneios.html">
+                        <p>Devaneios do Artista</p>
+                    </a>
                 </div>
 
                 <div class="legenda">
-                    
+
                     <table>
                         <tr>
                             <td>
-                                <img src="images/gal5/gal5_img (10).jpg" alt="">
+                                <img id="img15">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="images/gal5/gal5_img (3).jpg" alt="">
+                                <img id="img16">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="images/gal5/gal5_img (5).jpg" alt="">
+                                <img id="img17">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="images/gal5/gal5_img (7).jpg" alt="">
+                                <img id="img18">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <img src="images/gal5/gal5_img (9).jpg" alt="">
+                                <img id="img19">
                             </td>
                         </tr>
                     </table>
 
-                    <a href="galerias/trabalhadores.html"><p>Trabalhadores da Praia</p></a>
+                    <a href="galerias/selvapedra.html">
+                        <p>Selvas de Pedra</p>
+                    </a>
+                </div>
+
+                <div class="legenda">
+
+                    <table>
+                        <tr>
+                            <td>
+                                <img id="img20">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img id="img21">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img id="img22">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img id="img23">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img id="img24">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <a href="galerias/trabalhadores.html">
+                        <p>Trabalhadores da Praia</p>
+                    </a>
                 </div>
 
             </div>
@@ -224,8 +257,92 @@
 
     </div>
 
+    <script type="module">
+
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAny_6AT2YAYjPttmne0jygcqOWtu23lvA",
+            authDomain: "danielolifotografias.firebaseapp.com",
+            databaseURL: "https://danielolifotografias-default-rtdb.firebaseio.com",
+            projectId: "danielolifotografias",
+            storageBucket: "danielolifotografias.appspot.com",
+            messagingSenderId: "1084089897568",
+            appId: "1:1084089897568:web:35fcfd9ddedf03620ae905"
+        };
+
+        const app = initializeApp(firebaseConfig);
+
+        import { getDatabase, ref, child, get } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js";;
+
+        const dbRef = ref(getDatabase());
+        let imgs = [14, 22, 24, 10, 21, 4, 34, 28, 30, 44, 1, 19, 34, 40, 27, 1, 6, 3, 11, 20, 9, 2, 3, 4, 6];
+
+        get(child(dbRef, `TheProductRealdb/artevive/LinksOfImagesArray/`)).then((snapshot) => {
+            if (snapshot.exists()) {
+
+                for (let i = 0; i < 5; i++) {
+                    let img = document.getElementById("img" + i);
+                    img.src = snapshot.val()[imgs[i]];
+                }
+
+            };
+        })
+
+        get(child(dbRef, `TheProductRealdb/devaneios/LinksOfImagesArray/`)).then((snapshot) => {
+            if (snapshot.exists()) {
+
+                for (let i = 10; i < 15; i++) {
+                    let img1 = document.getElementById("img" + i);
+                    img1.src = snapshot.val()[imgs[i]];
+                }
+
+            };
+        })
+
+        get(child(dbRef, `TheProductRealdb/natureza/LinksOfImagesArray/`)).then((snapshot) => {
+            if (snapshot.exists()) {
+
+                for (let i = 5; i < 10; i++) {
+                    let img2 = document.getElementById("img" + i);
+                    img2.src = snapshot.val()[imgs[i]];
+                }
+
+            };
+        })
+
+        get(child(dbRef, `TheProductRealdb/selvapedra/LinksOfImagesArray/`)).then((snapshot) => {
+            if (snapshot.exists()) {
+
+                for (let i = 15; i < 20; i++) {
+                    let img3 = document.getElementById("img" + i);
+                    img3.src = snapshot.val()[imgs[i]];
+                }
+
+            };
+        })
+
+        get(child(dbRef, `TheProductRealdb/trabalhadores/LinksOfImagesArray/`)).then((snapshot) => {
+            if (snapshot.exists()) {
+
+                for (let i = 20; i < 25; i++) {
+                    let img4 = document.getElementById("img" + i);
+                    img4.src = snapshot.val()[imgs[i]];
+                }
+
+            };
+        })
+
+    </script>
+
     <footer>
         <p>Daniel Oli Photography © Designed by DSilva</p>
     </footer>
 </body>
+
 </html>

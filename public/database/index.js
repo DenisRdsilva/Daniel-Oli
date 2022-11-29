@@ -10,9 +10,7 @@
         const proglab = document.getElementById('loadlab');
         const backbtn = document.getElementById('backbutton');
 
-        backbtn.disabled = true;
-
-        const name = ['artevive', 'devaneios', 'natureza', 'selvapedra', 'trabalhadores'];
+        const name = ['artevive', 'natureza', 'devaneios', 'selvapedra', 'trabalhadores'];
 
         function OpenFileDialog() {
             let inp = document.createElement('input');
@@ -145,7 +143,6 @@
                         }
                     })
                 },
-                backbtn.disabled = false
             )
         }
 
@@ -184,3 +181,5 @@
             alert("As imagens foram adicionadas com sucesso!");
             RestoreBack();
         }
+
+

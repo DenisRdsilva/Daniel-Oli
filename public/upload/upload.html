@@ -8,23 +8,34 @@
     <title>Daniel Oli Fotografias</title>
 
     <link href="estilo.css" rel="stylesheet">
-    <script src="/database/index.js" type="module"></script>
+
+    <script src="/public/database/index.js" type="module"></script>
+    <script type="module" src="app2.js"></script>
 
 </head>
 
 <body>
+    <div class="screen">
+        <div class="container">
+            <div id="controldiv">
+                <label id="loadlab">Inserir Imagens</label><br><br>
+                <button id="selimgsbtn">Selecionar Imagens</button>
+                <button id="addprodbtn">Fazer Upload</button><br>
+            </div>
 
-    <div id="controldiv">
-        <label id="loadlab">Inserir Imagens:</label><br><br>
-        <button id="selimgsbtn">Selecionar Imagens</button>
-        <button id="addprodbtn">Fazer Upload</button><br>
+            <div id="imagesdiv"></div>
+
+            <div>
+                <br><button id="backbutton">Voltar</button>
+                <button type="submit" id="logout">Sair da conta</button><br>
+                <br><button><a href="/public/index.html">Voltar ao Home</a></button>
+            </div>
+        </div>
     </div>
 
-    <div id="imagesdiv"></div>
-
-    <div>
-        <br><button id="backbutton">Voltar</button>
-    </div>
+    <footer>
+        <p>Daniel Oli Photography © Designed by DSilva</p>
+    </footer>
 
 </body>
 
